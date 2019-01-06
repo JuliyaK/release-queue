@@ -1,0 +1,46 @@
+{ "queue":
+[
+    {
+        "key": "RELEASE-0001",
+        "name": "Application1",
+        "status": "waiting",
+        "type": "backend"
+    },
+    {
+        "key": "RELEASE-0002",
+        "name": "Application2",
+        "status": "waiting",
+        "type": "frontend"
+    },
+    {
+        "key": "RELEASE-0003",
+        "name": "Application1",
+        "status": "building",
+        "type": "backend"
+    },
+    {
+        "key": "RELEASE-0004",
+        "name": "Application1",
+        "status": "testing",
+        "type": "backend"
+    },
+    {
+        "key": "RELEASE-0005",
+        "name": "Application2",
+        "status": "building",
+        "type": "frontend"
+    },
+    {
+        "key": "RELEASE-0006",
+        "name": "Application2",
+        "status": "deploying",
+        "type": "frontend"
+    },
+    {
+        "key": "RELEASE-0007",
+        "name": "Application1",
+        "status": "stabilizing",
+        "type": "backend"
+    }
+]
+}

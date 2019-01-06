@@ -1,71 +1,261 @@
 body {
-  background-color: white;
+ /* background-color: rgba(248, 247, 246, 0.267);*/
   margin: 0;
   padding: 0;
- 
+  font-family: sans-serif;
+
+}
+h3 {
+  text-align: start;
+  font-family: 'Helvetica', Times, serif;
+
+  font-size: 25px;
+  color: rgb(43, 77, 132);
 }
 
-h3 {
-  margin: 10px;
-  margin-bottom: 10px;
-  font-size: 1.6em;
-  font-family: 'Century';
-  color: rgb(3, 55, 104);
+/*общий контейнер*/
+.container{
+  display: grid;
+ 
+
+}
+
+/*контейнер со всеми фазами*/
+.grid-container{
+  display: grid;
+  font-family: 'Helvetica', Times, serif;
+
+  block-size: 35px;
+  font-size: 15px;
+  
+  color: rgb(43, 77, 132);
+ 
+}
+.task{
+  display: grid;
+  font-family: 'Helvetica', Times, serif;
+  block-size: 35px;
+  font-size: 17px;
+}
+
+/*контейнер со всеми задачами*/
+.one{
+  width: 255px;
+  font-size: 15px;
+  display: grid;
+  grid-column: 1 / 2;
+  padding: 0.5em;
+  margin-right: 3px;
+  
+}
+.two{
+  display: grid;
+  font-size: 15px;
+  padding: 0.5em;
+  grid-column: 2 / 3;
+  width: 255px;
+  margin-right: 3px;
+ 
+
+}
+.three{
+  display: grid;
+  font-size: 15px;
+  padding: 0.5em;
+  grid-column: 3 / 4;
+  margin-right: 10px;
+  margin-right: 3px;
+  width: 255px;
+
+
+}
+
+.four{
+  display: grid;
+  font-size: 15px;
+  padding: 0.5em;
+  grid-column: 4 / 5;
+  margin-right: 10px;
+ margin-right: 3px;
+  width: 255px;
+ 
+
+}
+.five{
+  display: grid;
+  width: auto;
+  font-size: 15px;
+  padding: 0.5em;
+  grid-column: 5 / 6;
+  width: 255px;
+  margin-right: 3px;
+ 
+
+}
+
+/*контейнер для каждой фазы по отдельности*/
+.faza1
+{
+  font-family: 'Times New Roman', Times, serif;
+
+  block-size: 230px;
+  width: 255px;
+  padding: 0.5em;
+  font-size: 15px;
+  display: grid;
+  grid-column: 1/2;
+  color: rgb(150, 167, 186);
+  font-variant: normal;
+  font-weight: bold;
+  margin-right: 3px;
+  background-color: rgb(244, 246, 249);
+
   
 }
 
-.grid-container {
+.faza2
+{
+  font-family: 'Times New Roman', Times, serif;
+
+  block-size: 230px;
+  width: 255px;
+  grid-column: 2/3;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  text-align: center;
+  font-size: 15px;
+  padding: 0.5em;
+  text-align: start;
+  color: rgb(150, 167, 186);
+  font-variant: normal;
+  font-weight: bold;
+  margin-right: 3px;
+  background-color: rgb(244, 246, 249);
+
+
+}
+
+.faza3
+{
+  font-family: 'Times New Roman', Times, serif;
+
+  block-size: 230px;
+  width: 255px;
+  grid-column: 3/4;
+  display: grid;
+  font-size: 15px;
+  padding: 0.5em;
+  text-align: start;
+  color: rgb(150, 167, 186);
+  font-variant: normal;
+  font-weight: bold;
+  margin-right: 3px;
+  background-color: rgb(244, 246, 249);
+
+}
+
+.faza4
+{
+  font-family: 'Times New Roman', Times, serif;
+
+  block-size: 230px;
+  width: 255px;
+  grid-column: 4/5;
+  display: grid;
+  font-size: 15px;
+  padding: 0.5em;
+  text-align: start;
+  color: rgb(150, 167, 186);
+  font-variant: normal;
+  font-weight: bold;
+  margin-right: 3px;
+  background-color: rgb(244, 246, 249);
+
+  
+}
+
+.faza5
+{
+  font-family: 'Times New Roman', Times, serif;
+
+  block-size: 230px;
+  width: 255px;
+  grid-column: 5/6;
+  display: grid;
+  font-size: 15px;
+  padding: 0.5em;
+  text-align: start;
+  color: rgb(150, 167, 186);
+  font-variant: normal;
+  font-weight: bold;
+  margin-right: 3px;
+  background-color: rgb(244, 246, 249);
+
+
+}
+
+/*контейнер для каждой задачи находящейся в testing*/
+.waiting
+{
+
+  padding: 10px;
+  display: grid;
+  margin: 5px;
+  text-align: start;
+  border: 1.5px solid rgb(241, 241, 241);
+  grid-column: 1/2;
   background-color:white;
-  align-self: center;
-  height: auto;  
-
+ 
 }
+/*контейнер для каждой отдельной задачи находящейся в test*/
+.building
+{
 
-.grid-items { 
-  margin: 3px;
-  font-size: 1.1em;
-  color: gray;
-  font-family: 'Courier New, Courier, monospace';
-  text-transform: uppercase;
-
-}
-
-
-
-.grid-item {
+  padding: 9px;
+  display: grid;
+  margin: 4px;
+  text-align: start;
+  border: 1.5px solid rgb(241, 241, 241);
+  grid-column: 2/3;
   background-color: white;
-  font-size: 1.1em;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
-  -23px 0 20px -23px rgba(0, 0, 0, .8),
-  23px 0 20px -23px rgba(0, 0, 0, .8),
-  0 0 40px rgba(0, 0, 0, .1) inset;
-  margin-block-end: 15px;
-  margin-right: 15px;
+
+  
 }
 
-.waiting {
-  grid-column-start: 1;
-  order: 1;
+.testing
+{
+  
+  padding: 9px;
+  display: grid;
+  text-align: start;
+  border: 1.5px solid rgb(241, 241, 241);
+  margin: 4px;
+  grid-column: 3/4;
+  background-color: white;
+
+ 
 }
 
-.building {
-  grid-column-start: 2;
-  order: 2;
-}
+/*контейнер для каждой задачи находящейся в testing*/
+.deploying
+{
 
-.testing { 
-  grid-column-start: 3;
-  order: 3;
+  padding: 9px;
+  display: grid;
+  text-align: start;
+  border: 1.5px solid rgb(241, 241, 241);
+  margin: 4px;
+  grid-column: 4/5;
+  background-color: white;
 }
-
-.deploying { 
-  grid-column-start: 4;
-  order: 4;
-}
-.stabilizing {
-  grid-column-start: 5;
-  order: 5;
+/*контейнер для каждой отдельной задачи находящейся в test*/
+.stabilizing
+{
+  
+  padding: 9px;
+  margin: 4px;
+  display: grid;
+  text-align: start;
+  border: 1.5px solid rgb(241, 241, 241);
+  grid-column: 5/6;
+  background-color: white;
+  
 }
