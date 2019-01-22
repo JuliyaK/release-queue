@@ -1,4 +1,4 @@
-{ "queue":
+
 [
     {
         "key": "RELEASE-0001",
@@ -43,4 +43,4 @@
         "type": "backend"
     }
 ]
-}
+

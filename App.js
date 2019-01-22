@@ -1,28 +1,27 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import AppHeader from './components/AppHeader'
+import Container from './components/contsiners'
 
-class App extends Component {
+class App extends React.Component {
+
+
+
+gettingDate =  () => {
+ fetch("http://localhost:3001/tasks.json").then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+  
+}
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <AppHeader />
+        <Container containerMethod={this.gettingDate} />
       </div>
     );
   }
 }
-
 export default App;
