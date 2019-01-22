@@ -5,8 +5,8 @@ import Container from './components/contsiners'
 
 class App extends React.Component {
 
-gettingDate = async () => {
-
+gettingDate = async (e) => {
+  e.preventDefault();
   const api_url = await fetch("http://localhost:3001/tasks.json");
   const data = await api_url.json();
   console.log(data);
@@ -17,7 +17,7 @@ gettingDate = async () => {
     return (
       <div>
         <AppHeader />
-        <Container />
+        <Container gettingMetod={this.gettingDate} />
       </div>
     );
   }

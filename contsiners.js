@@ -3,7 +3,8 @@ import React from 'react'
 class Container extends React.Component {
     render() {
         return(
-            <div className="container">
+            <div onSubmit={this.props.gettingMetod}>
+            <button>Получить данные</button>
                 <div className="grid-container">
                     <div className="grid-container faza1">ОЖИДАНИЕ</div>
                     <div className="grid-container faza2">СБОРКА</div>
