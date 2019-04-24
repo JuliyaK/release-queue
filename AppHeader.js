@@ -1,11 +1,9 @@
-import React from "react"
+import React from 'react';
 
-class AppHeader extends React.Component {
-    render() {
-        return (
-            <div>Таблица очереди релизов</div>
-        );
-    }
+function AppHeader() {
+    return(
+        <h1>История</h1>
+    )
 }
 
-export default AppHeader;
+export default AppHeader
