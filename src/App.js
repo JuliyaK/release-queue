@@ -1,7 +1,7 @@
 import React from 'react';
 import './index';
 import AppHeader from './components/AppHeader';
-
+import Filters from './components/Filters';
 import Header from './components/Header';
 
 var queue =[{
@@ -83,7 +83,7 @@ function aplication2(){
 }
 
 
-aplication2()
+queue = aplication2();
 
   var waitingGroup = [];
   var buildingGroup = [];
@@ -145,6 +145,8 @@ function App() {
     <div>
       <AppHeader />
       <Header />
+      <Filters />
+      <Container />
      
      
     </div>
