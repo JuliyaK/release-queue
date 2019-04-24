@@ -13,10 +13,6 @@ body {
    color: rgb(43, 77, 132);
  }
  
- button {
-  background: blueviolet;
-  width: 10em;
- }
  /*общий контейнер*/
  .container{
    display: grid;
@@ -100,18 +96,15 @@ body {
  /*контейнер для каждой фазы по отдельности*/
  .faza1
  {
-   font-family: 'Times New Roman', Times, serif;
- 
-   block-size: 230px;
-   width: 255px;
-   padding: 0.5em;
-   font-size: 15px;
-   display: grid;
-   grid-column: 1/2;
-   color: rgb(150, 167, 186);
-   font-variant: normal;
-   font-weight: bold;
-   margin-right: 3px;
+  display: grid;
+  width: 235px;
+  grid-column: 1 / 2;
+  padding: 0.5em;
+  margin-right: 3px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(150, 167, 186);
+  font-variant: normal;
+  font-weight: bold;
    background-color: rgb(244, 246, 249);
  
    
@@ -119,19 +112,15 @@ body {
  
  .faza2
  {
-   font-family: 'Times New Roman', Times, serif;
- 
-   block-size: 230px;
-   width: 255px;
-   grid-column: 2/3;
-   display: grid;
-   font-size: 15px;
-   padding: 0.5em;
-   text-align: start;
-   color: rgb(150, 167, 186);
-   font-variant: normal;
-   font-weight: bold;
-   margin-right: 3px;
+  display: grid;
+  width: 235px;
+  grid-column: 2 / 3;
+  padding: 0.5em;
+  margin-right: 3px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(150, 167, 186);
+  font-variant: normal;
+  font-weight: bold;
    background-color: rgb(244, 246, 249);
  
  

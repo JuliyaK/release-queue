@@ -1,3 +1,4 @@
+    
 body {
  /* background-color: rgba(248, 247, 246, 0.267);*/
   margin: 0;
@@ -5,10 +6,15 @@ body {
   font-family: sans-serif;
 
 }
+h1 {
+  text-align: start;
+  font-family: 'Helvetica', Times, serif;
+  font-size: 20px;
+  color: black;
+}
 h3 {
   text-align: start;
   font-family: 'Helvetica', Times, serif;
-
   font-size: 25px;
   color: rgb(43, 77, 132);
 }
@@ -35,7 +41,7 @@ h3 {
   display: grid;
   font-family: 'Helvetica', Times, serif;
   block-size: 35px;
-  font-size: 17px;
+
 }
 
 /*контейнер со всеми задачами*/
@@ -75,7 +81,7 @@ h3 {
   font-size: 15px;
   padding: 0.5em;
   grid-column: 4 / 5;
-  margin-right: 10px;
+  margin-right: 7px;
  margin-right: 3px;
   width: 255px;
  
@@ -101,13 +107,13 @@ h3 {
   block-size: 230px;
   width: 255px;
   padding: 0.5em;
-  font-size: 15px;
+  font-size: 20px;
   display: grid;
   grid-column: 1/2;
   color: rgb(150, 167, 186);
   font-variant: normal;
   font-weight: bold;
-  margin-right: 3px;
+  margin-right: 1px;
   background-color: rgb(244, 246, 249);
 
   
@@ -121,13 +127,13 @@ h3 {
   width: 255px;
   grid-column: 2/3;
   display: grid;
-  font-size: 15px;
+  font-size: 20px;
   padding: 0.5em;
   text-align: start;
   color: rgb(150, 167, 186);
   font-variant: normal;
   font-weight: bold;
-  margin-right: 3px;
+  margin-right: 1px;
   background-color: rgb(244, 246, 249);
 
 
@@ -141,7 +147,7 @@ h3 {
   width: 255px;
   grid-column: 3/4;
   display: grid;
-  font-size: 15px;
+  font-size: 20px;
   padding: 0.5em;
   text-align: start;
   color: rgb(150, 167, 186);
@@ -160,7 +166,7 @@ h3 {
   width: 255px;
   grid-column: 4/5;
   display: grid;
-  font-size: 15px;
+  font-size: 20px;
   padding: 0.5em;
   text-align: start;
   color: rgb(150, 167, 186);
@@ -180,7 +186,7 @@ h3 {
   width: 255px;
   grid-column: 5/6;
   display: grid;
-  font-size: 15px;
+  font-size: 20px;
   padding: 0.5em;
   text-align: start;
   color: rgb(150, 167, 186);
